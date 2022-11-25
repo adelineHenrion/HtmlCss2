@@ -1,0 +1,99 @@
+:root {
+    --vert: #97D077;
+    --rouge: #FF0000;
+    --bleu: #3333FF;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-size: xx-large;
+}
+
+menu {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    position: sticky;
+    width: 100%;
+    flex-grow: 2;
+}
+header {
+    position: fixed;
+}
+
+header li {
+    list-style: none;
+
+}
+
+header ul {
+    padding: 0;
+    margin: 0;
+    flex-grow: 1;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-weight: bold;
+}
+
+menu li, header ul li {
+    padding: 0.5rem;
+    border: black solid 1px;
+    font-size: 1.5rem;
+    background-color: white;
+    color: var(--vert);
+}
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 60%;
+}
+
+menu li:hover, .active, header ul li:hover {
+    background-color: var(--vert);
+    color: black;
+}
+
+img {
+    border: black dashed 2px;
+}
+
+#leconImages {
+    display: flex
+}
+
+#leconImages img {
+
+    flex: 1 100%;
+    margin: 0.5rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#leconSujet, #leconVerbe {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#leconSujet strong, #leconSujet em {
+    color: var(--bleu);
+}
+
+#leconVerbe strong, #leconVerbe em {
+    color: var(--rouge);
+}
